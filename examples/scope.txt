@@ -1,0 +1,9 @@
+# Scouter scope file: what you are allowed to scan.
+# Replace these with systems you own or have written permission to test.
+
+127.0.0.1              # your own machine
+192.168.56.0/28        # a lab network (VirtualBox host-only, for example)
+lab.example.com        # exact hostname
+*.test.example.com     # wildcard (pass hosts with -t, wildcards are not expanded)
+
+!192.168.56.1          # exclusion always wins (the hypervisor host, for example)

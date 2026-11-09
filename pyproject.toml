@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scouter"
+version = "0.1.0"
+description = "Scope-aware recon and service enumeration that writes a folder and a report per target."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Mohamed Mouzaoui" }]
+keywords = ["recon", "enumeration", "security", "bug-bounty", "pentest"]
+dependencies = []
+
+[project.scripts]
+scouter = "scouter.cli:main"
+
+[tool.setuptools]
+packages = ["scouter"]
